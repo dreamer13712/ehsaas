@@ -6,6 +6,8 @@ import MusicPlayer from '../components/MusicPlayer';
 import ProductCard from '../components/ProductCard';
 import AudioWaveform3D from '../components/AudioWaveform3D';
 import heroBg from '../assets/hero-bg.png';
+import merch1 from '../assets/merch-1.png';
+import merch2 from '../assets/merch-2.png';
 
 const Home = () => {
     const { scrollYProgress } = useScroll();
@@ -135,24 +137,18 @@ const Home = () => {
                         <a href="/shop" className="text-ehsaas-dark hover:text-ehsaas-gold font-bold uppercase text-sm tracking-widest transition-colors">View All</a>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
                         <ProductCard
-                            title="The Journey Journal"
-                            price="500.00"
-                            image="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800"
+                            title="Official Merchandise I"
+                            price="1200.00"
+                            image={merch1}
                             delay={0.1}
                         />
                         <ProductCard
-                            title="EHSAAS Tumbler"
-                            price="900.00"
-                            image="https://images.unsplash.com/photo-1570589253243-d345c2eb716d?auto=format&fit=crop&q=80&w=800"
-                            delay={0.2}
-                        />
-                        <ProductCard
-                            title="Limited Edition Hoodie"
+                            title="Official Merchandise II"
                             price="1500.00"
-                            image="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&q=80&w=800"
-                            delay={0.3}
+                            image={merch2}
+                            delay={0.2}
                         />
                     </div>
                 </div>

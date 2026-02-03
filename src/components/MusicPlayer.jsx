@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import track1 from '../assets/track-1.mp3';
 import track2 from '../assets/track-2.mp3';
 import track3 from '../assets/track-3.mp3';
+import track4 from '../assets/track-4.mp3';
 import albumArt from '../assets/album-art.png';
 
 const PLAYLIST = [
@@ -27,6 +28,13 @@ const PLAYLIST = [
         title: "Ehsaas Instrumental",
         artist: "Ehsaas Band",
         src: track3,
+        cover: albumArt
+    },
+    {
+        id: 4,
+        title: "Khoon Khaulda",
+        artist: "EHSAAS Band",
+        src: track4,
         cover: albumArt
     }
 ];
@@ -305,8 +313,8 @@ const MusicPlayer = () => {
                                         setIsPlaying(true);
                                     }}
                                     className={`flex items-center gap-3 p-2 rounded-lg cursor-pointer transition-colors ${index === currentTrackIndex
-                                            ? 'bg-ehsaas-gold/20 border border-ehsaas-gold/30'
-                                            : 'hover:bg-white/5 border border-transparent'
+                                        ? 'bg-ehsaas-gold/20 border border-ehsaas-gold/30'
+                                        : 'hover:bg-white/5 border border-transparent'
                                         }`}
                                 >
                                     <div className="w-10 h-10 rounded overflow-hidden relative flex-shrink-0">
