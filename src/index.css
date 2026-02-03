@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-ehsaas-cream: #F2ECE4;
+  --color-ehsaas-green: #D7E9B9;
+  --color-ehsaas-dark: #20293C;
+  --color-ehsaas-gold: #C5A059;
+  --font-script: "Dancing Script", cursive;
+  --font-sans: "Montserrat", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-ehsaas-green text-ehsaas-dark font-sans;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+}
+
+/* Custom scrollbar to match premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-ehsaas-cream;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-ehsaas-dark rounded-full;
+}
