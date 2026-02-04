@@ -12,7 +12,7 @@
 
 @layer base {
   body {
-    @apply bg-ehsaas-green text-ehsaas-dark font-sans;
+    @apply bg-ehsaas-green text-ehsaas-dark font-allura;
   }
 
   h1,
